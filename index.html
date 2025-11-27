@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <!-- मेटा टैग्स (Meta Tags) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>अपनी ऐप डाउनलोड करें - कमाएँ और सीखें</title>
+    <!-- Tailwind CSS CDN लोड करें -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter का उपयोग करें -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* कस्टम स्टाइलिंग (Custom Styling) */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* हल्का नीला बैकग्राउंड */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- मुख्य कंटेनर (Main Container) -->
+    <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-lg w-full text-center transform transition duration-500 hover:scale-[1.01] border-t-4 border-indigo-600">
+
+        <!-- ऐप का नाम और लोगो (App Name and Logo/Icon) -->
+        <div class="flex flex-col items-center justify-center mb-6">
+            <!-- आप यहाँ ऐप का लोगो (Emoji या SVG) डाल सकते हैं -->
+            <div class="text-6xl mb-4 text-indigo-600">
+                🚀
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight">
+                आर्यन अर्निंग ऐप
+            </h1>
+            <p class="text-md text-gray-500 mt-2">
+                गणित क्विज़ और रिडीम कोड्स के साथ कमाएँ!
+            </p>
+        </div>
+
+        <!-- ऐप के स्क्रीनशॉट्स (App Screenshots) -->
+        <div class="flex justify-center space-x-4 mb-8">
+            <!-- यहाँ आप अपने ऐप के स्क्रीनशॉट की जगह, GitHub में अपलोड की गई इमेज का URL डाल सकते हैं -->
+            <!-- Placeholder Images (उदाहरण के लिए) -->
+            <img src="https://placehold.co/120x240/1f2937/ffffff?text=स्क्रीनशॉट+1" 
+                 alt="App Screenshot 1" 
+                 class="w-1/3 max-w-[120px] rounded-lg shadow-md hover:shadow-xl transition duration-300">
+            <img src="https://placehold.co/120x240/1f2937/ffffff?text=स्क्रीनशॉट+2" 
+                 alt="App Screenshot 2" 
+                 class="w-1/3 max-w-[120px] rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        </div>
+
+        <!-- डाउनलोड बटन (Download Button) -->
+        <!-- ********* यह वह लिंक है जिसे आपको अपनी APK फ़ाइल से जोड़ना है ********* -->
+        <!-- सुनिश्चित करें कि आपकी APK फ़ाइल का नाम 'my-earning-app.apk' है और यह 'index.html' के साथ रूट फ़ोल्डर में अपलोड की गई है -->
+        <a id="downloadButton"
+           href="cearn.apk"
+           download
+           class="inline-block w-full py-4 text-xl font-bold text-white bg-green-500 rounded-lg shadow-lg hover:bg-green-600 hover:shadow-xl transition duration-300 transform hover:scale-[1.02] active:scale-100 focus:outline-none focus:ring-4 focus:ring-green-300">
+            <svg class="w-6 h-6 inline-block mr-2 align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            फ्री डाउनलोड करें (APK)
+        </a>
+
+        <!-- नोट और आवश्यकताएँ (Note and Requirements) -->
+        <p class="mt-4 text-sm text-gray-400">
+            Android 5.0+ आवश्यक है। डाउनलोड शुरू करने के लिए बटन पर क्लिक करें।
+        </p>
+
+    </div>
+
+</body>
+</html>
